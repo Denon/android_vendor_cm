@@ -27,7 +27,7 @@ Getting Started
 ---------------
 
 To get started with Android/CyanogenMod, you'll need to get
-familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
+familiar with [Repo](https://source.android.com/source/using-repo.html) and [Version Control with Git](https://source.android.com/source/version-control.html).
 
 To initialize your local repository using the CyanogenMod trees, use a command like this:
 
@@ -37,7 +37,7 @@ Then to sync up:
 
     repo sync
 
-Please see the [CyanogenMod Wiki](http://wiki.cyanogenmod.org/) for building instructions.
+Please see the [CyanogenMod Wiki](http://wiki.cyanogenmod.org/) for building instructions, by device.
 
 For more information on this Github Organization and how it is structured, 
 please [read the wiki article](http://wiki.cyanogenmod.org/w/Github_Organization)
@@ -47,4 +47,4 @@ Buildbot
 
 All supported devices are built nightly and periodically as changes are committed to ensure the source trees remain buildable.
 
-You can view the current build statuses at [CyanogenMod Jenkins](http://jenkins.cyanogenmod.org/)
+You can view the current build statuses in the [Jenkins](http://jenkins.cyanogenmod.org) tool.
