@@ -102,6 +102,21 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.local.rc:root/init.cm.rc
 
+# MoKee-specific init file
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/app/GooglePinyinIME.apk:system/app/GooglePinyinIME.apk \
+    vendor/cm/prebuilt/common/lib/libgnustl_shared.so:system/lib/libgnustl_shared.so \
+    vendor/cm/prebuilt/common/lib/libhwr.so:system/lib/libhwr.so \
+    vendor/cm/prebuilt/common/lib/libjni_delight.so:system/lib/libjni_delight.so \
+    vendor/cm/prebuilt/common/lib/libjni_googlepinyinime_latinime_5.so:system/lib/libjni_googlepinyinime_latinime_5.so \
+    vendor/cm/prebuilt/common/lib/libjni_hmm_shared_engine.so:system/lib/libjni_hmm_shared_engine.so \
+    vendor/cm/prebuilt/common/lib/libpinyin_data_bundle.so:system/lib/libpinyin_data_bundle.so
+
+# MoKee prebuilts
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/app/RootExplorer.apk:system/app/RootExplorer.apk \
+    vendor/cm/prebuilt/common/app/Sweep2Wake.apk:system/app/Sweep2Wake.apk
+
 # Compcache/Zram support
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/compcache:system/bin/compcache \
@@ -134,8 +149,7 @@ include vendor/cm/config/themes_common.mk
 # Required CM packages
 PRODUCT_PACKAGES += \
     Camera \
-    Development \
-    LatinIME
+    Development
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
@@ -152,9 +166,7 @@ PRODUCT_PACKAGES += \
     audio_effects.conf \
     CMWallpapers \
     Apollo \
-    CMFileManager \
-    LockClock \
-    CMAccount
+    LockClock
 
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver
@@ -202,7 +214,6 @@ PRODUCT_PACKAGES += \
 ifneq ($(TARGET_BUILD_VARIANT),user)
 
 PRODUCT_PACKAGES += \
-    CMUpdater \
     Superuser \
     su
 
