@@ -163,7 +163,7 @@ PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf \
-    CMWallpapers \
+    CMAccount \
     Apollo \
     LockClock
 
