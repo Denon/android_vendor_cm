@@ -117,6 +117,11 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/app/RootExplorer.apk:system/app/RootExplorer.apk \
     vendor/cm/prebuilt/common/app/Sweep2Wake.apk:system/app/Sweep2Wake.apk
 
+# Copy phoneloc files
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/lib/libphoneloc-jni.so:system/lib/libphoneloc-jni.so \
+    vendor/cm/prebuilt/common/usr/share/phoneloc.dat:system/usr/share/phoneloc.dat
+
 # Compcache/Zram support
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/compcache:system/bin/compcache \
