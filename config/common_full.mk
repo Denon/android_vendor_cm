@@ -1,13 +1,10 @@
-#Inherit common MK stuff
-$(call inherit-product, vendor/mk/config/common.mk)
+# Inherit common CM stuff
+$(call inherit-product, vendor/cm/config/common.mk)
 
-# Include MK audio files
-include vendor/mk/config/mk_audio.mk
+# Include CM audio files
+include vendor/cm/config/cm_audio.mk
 
-# Include MK LatinIME dictionaries
-PRODUCT_PACKAGE_OVERLAYS += vendor/mk/overlay/dictionaries
-
-# Optional MK packages
+# Optional CM packages
 PRODUCT_PACKAGES += \
     Galaxy4 \
     HoloSpiralWallpaper \
@@ -21,6 +18,6 @@ PRODUCT_PACKAGES += \
     SoundRecorder
 
 
-# Extra tools in MK
+# Extra tools in CM
 PRODUCT_PACKAGES += \
     vim

@@ -1,16 +1,16 @@
-# Inherit common MK stuff
-$(call inherit-product, vendor/mk/config/common.mk)
+# Inherit common CM stuff
+$(call inherit-product, vendor/cm/config/common.mk)
 
-# Include MK audio files
-include vendor/mk/config/mk_audio.mk
+# Include CM audio files
+include vendor/cm/config/cm_audio.mk
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=Orion.ogg \
-    ro.config.notification_sound=Alya.ogg \
-    ro.config.alarm_alert=Alarm_Buzzer.ogg
+    ro.config.notification_sound=Argon.ogg \
+    ro.config.alarm_alert=Hassium.ogg
 
 ifeq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
     PRODUCT_COPY_FILES += \
-        vendor/mk/prebuilt/common/bootanimation/800.zip:system/media/bootanimation.zip
+        vendor/cm/prebuilt/common/bootanimation/800.zip:system/media/bootanimation.zip
 endif
