@@ -106,20 +106,18 @@ PRODUCT_COPY_FILES += \
 
 # CM prebuilts
 PRODUCT_COPY_FILES += \
-    vendor/mk/prebuilt/ota/verifier:system/bin/verifier \
-    vendor/mk/prebuilt/common/lib/libbdpush_V1_0.so:system/lib/libbdpush_V1_0.so \
-    vendor/mk/prebuilt/common/app/GooglePinyinIME.apk:system/app/GooglePinyinIME.apk \
-    vendor/mk/prebuilt/common/lib/libgnustl_shared.so:system/lib/libgnustl_shared.so \
-    vendor/mk/prebuilt/common/lib/libhwr.so:system/lib/libhwr.so \
-    vendor/mk/prebuilt/common/lib/libjni_delight.so:system/lib/libjni_delight.so \
-    vendor/mk/prebuilt/common/lib/libjni_googlepinyinime_latinime_5.so:system/lib/libjni_googlepinyinime_latinime_5.so \
-    vendor/mk/prebuilt/common/lib/libjni_hmm_shared_engine.so:system/lib/libjni_hmm_shared_engine.so \
-    vendor/mk/prebuilt/common/lib/libpinyin_data_bundle.so:system/lib/libpinyin_data_bundle.so
+    vendor/cm/prebuilt/common/app/GooglePinyinIME.apk:system/app/GooglePinyinIME.apk \
+    vendor/cm/prebuilt/common/lib/libgnustl_shared.so:system/lib/libgnustl_shared.so \
+    vendor/cm/prebuilt/common/lib/libhwr.so:system/lib/libhwr.so \
+    vendor/cm/prebuilt/common/lib/libjni_delight.so:system/lib/libjni_delight.so \
+    vendor/cm/prebuilt/common/lib/libjni_googlepinyinime_latinime_5.so:system/lib/libjni_googlepinyinime_latinime_5.so \
+    vendor/cm/prebuilt/common/lib/libjni_hmm_shared_engine.so:system/lib/libjni_hmm_shared_engine.so \
+    vendor/cm/prebuilt/common/lib/libpinyin_data_bundle.so:system/lib/libpinyin_data_bundle.so
 
 # CM prebuilts
 PRODUCT_COPY_FILES += \
-    vendor/mk/prebuilt/common/app/RootExplorer.apk:system/app/RootExplorer.apk \
-    vendor/mk/prebuilt/common/app/Sweep2Wake.apk:system/app/Sweep2Wake.apk
+    vendor/cm/prebuilt/common/app/RootExplorer.apk:system/app/RootExplorer.apk \
+    vendor/cm/prebuilt/common/app/Sweep2Wake.apk:system/app/Sweep2Wake.apk
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
