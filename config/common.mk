@@ -119,12 +119,6 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/app/RootExplorer.apk:system/app/RootExplorer.apk \
     vendor/cm/prebuilt/common/app/Sweep2Wake.apk:system/app/Sweep2Wake.apk
 
-# Software DRM
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/framework/com.google.widevine.software.drm.jar:system/framework/com.google.widevine.software.drm.jar \
-    vendor/cm/prebuilt/common/etc/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml
-
-
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
     vendor/cm/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
