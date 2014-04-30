@@ -105,6 +105,8 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/app/GooglePinyinIME.apk:system/app/GooglePinyinIME.apk \
     vendor/cm/prebuilt/common/lib/libgnustl_shared.so:system/lib/libgnustl_shared.so \
     vendor/cm/prebuilt/common/lib/libhwr.so:system/lib/libhwr.so \
+    vendor/cm/prebuilt/common/lib/libhwrword.so:system/lib/libhwrword.so \
+    vendor/cm/prebuilt/common/lib/libhwrzhmodel.so:system/lib/libhwrzhmodel.so \
     vendor/cm/prebuilt/common/lib/libjni_delight.so:system/lib/libjni_delight.so \
     vendor/cm/prebuilt/common/lib/libjni_googlepinyinime_latinime_5.so:system/lib/libjni_googlepinyinime_latinime_5.so \
     vendor/cm/prebuilt/common/lib/libjni_hmm_shared_engine.so:system/lib/libjni_hmm_shared_engine.so \
