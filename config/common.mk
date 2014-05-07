@@ -134,7 +134,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/config/permissions/com.cyanogenmod.android.xml:system/etc/permissions/com.cyanogenmod.android.xml
 
-
 # T-Mobile theme engine
 include vendor/cm/config/themes_common.mk
 
@@ -305,11 +304,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.version=$(CM_VERSION) \
   ro.modversion=$(CM_VERSION) \
   ro.cmlegal.url=http://www.cyanogenmod.org/docs/privacy
-
-# Common GooManager build properties
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.goo.board=$(CM_BUILD) \
-    ro.goo.version=$(shell date +%s)
 
 -include vendor/cm-priv/keys/keys.mk
 
